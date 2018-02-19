@@ -1,14 +1,10 @@
 <?php
-
 class Bolha{
-
     public function Executa (){
-
         //$vetor = array(0,1,2,3,4,5,6);
         $vetor = array('a','b','c','d','e','f','g');
         $TAM = 7;
         $aux = 0;
-
         // coloca em ordem crescente
         for($x = 0; $x < $TAM; $x++ ){
             for($y = $x + 1; $y < $TAM; $y++ ){ // sempre 1 elemento a frente
@@ -19,31 +15,25 @@ class Bolha{
                     $vetor[$y] = $aux;
                 }
             }
-        } 
-
+        }
         echo " Elementos ordenados (Crescente): <br/>";
-
         for($x = 0; $x < $TAM; $x++){
             echo " O numero na posicao ".$x." eh ".$vetor[$x]."<br/>"; // exibe o vetor ordenado
         }
-
-    // coloca em ordem decrescente
-    for($x = 0; $x < $TAM; $x++){
-        for($y = $x + 1; $y < $TAM; $y++ ){
-            if ($vetor[$x] < $vetor[$y] ){
-            $aux = $vetor[$x];
-            $vetor[$x] = $vetor[$y];
-            $vetor[$y] = $aux;
+        // coloca em ordem decrescente
+        for($x = 0; $x < $TAM; $x++){
+            for($y = $x + 1; $y < $TAM; $y++ ){
+                if ($vetor[$x] < $vetor[$y] ){
+                    $aux = $vetor[$x];
+                    $vetor[$x] = $vetor[$y];
+                    $vetor[$y] = $aux;
         }
     }
 }
-
 echo " Elementos Desordenados (Decrescente): <br/>";
-
 for($x = 0; $x < $TAM; $x++){
     echo " O numero na posicao ".$x." eh ".$vetor[$x]."<br/>";
 }
-
 }
 }
 $acessa = new Bolha();
