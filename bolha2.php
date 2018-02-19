@@ -18,7 +18,7 @@ class Bolha{
         }
         echo " Elementos ordenados (Crescente): <br/>";
         for($x = 0; $x < $TAM; $x++){
-            echo " O numero na posicao ".$x." eh ".$vetor[$x]."<br/>"; // exibe o vetor ordenado
+            echo " O numero na posicao ".$x." eh ".$vetor[$x]."<br/>";
         }
         // coloca em ordem decrescente
         for($x = 0; $x < $TAM; $x++){
